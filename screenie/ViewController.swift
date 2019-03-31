@@ -20,6 +20,18 @@ class ViewController: UIViewController {
     var recorder = RPScreenRecorder.shared()
     
     @IBAction func ImagePicked(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            selectedImageView.image = UIImage(named: "skate")!
+        case 1:
+            selectedImageView.image = UIImage(named: "food")!
+        case 2:
+            selectedImageView.image = UIImage(named: "cat")!
+        case 3:
+            selectedImageView.image = UIImage(named: "nature")!
+        default:
+            selectedImageView.image = UIImage(named: "skate")!
+        }
         
     }
     

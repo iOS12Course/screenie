@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var statusLbl: UILabel!
+    @IBOutlet weak var imagePicker: UISegmentedControl!
+    
+    @IBOutlet weak var selectedImageView: UIImageView!
+    
+    @IBOutlet weak var recordBtn: UIButton!
+    @IBOutlet weak var micToggle: UISwitch!
+ 
+    
+
+    @IBAction func ImagePicked(_ sender: UISegmentedControl) {
+        
     }
-
-
+    
+    @IBAction func recordBtnWasPressed(_ sender: Any) {
+    }
+    
 }
 

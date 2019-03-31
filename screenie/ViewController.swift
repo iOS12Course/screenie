@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import ReplayKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var imagePicker: UISegmentedControl!
-    
     @IBOutlet weak var selectedImageView: UIImageView!
-    
     @IBOutlet weak var recordBtn: UIButton!
     @IBOutlet weak var micToggle: UISwitch!
  
+    var recorder = RPScreenRecorder.shared()
     
-
     @IBAction func ImagePicked(_ sender: UISegmentedControl) {
         
     }
